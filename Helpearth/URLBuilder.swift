@@ -10,7 +10,7 @@ import Foundation
 
 class URLBuilder {
     static func getURL() -> String {
-        let baseHelpearthURL = "https://helpearth.bubbleapps.io/version-test/view?"
+        let baseHelpearthURL = "https://helpearth.bubbleapps.io/version-test/view"
         let id = UUID().uuidString
         let url = baseHelpearthURL + "?id=" + id
         return url
