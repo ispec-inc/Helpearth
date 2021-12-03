@@ -13,6 +13,13 @@
 		6219CF5F2755BF0900B1E0FE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6219CF5D2755BF0900B1E0FE /* Main.storyboard */; };
 		6219CF612755BF0A00B1E0FE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6219CF602755BF0A00B1E0FE /* Assets.xcassets */; };
 		6219CF642755BF0A00B1E0FE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6219CF622755BF0A00B1E0FE /* LaunchScreen.storyboard */; };
+		62A7DD65275882E7004B1410 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 62A7DD64275882E7004B1410 /* RxCocoa */; };
+		62A7DD67275882E7004B1410 /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = 62A7DD66275882E7004B1410 /* RxRelay */; };
+		62A7DD69275882E7004B1410 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 62A7DD68275882E7004B1410 /* RxSwift */; };
+		62A7DD6C27588D97004B1410 /* RxGesture in Frameworks */ = {isa = PBXBuildFile; productRef = 62A7DD6B27588D97004B1410 /* RxGesture */; };
+		62D8E9DB275891BD00DDA3AD /* URLBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62D8E9DA275891BD00DDA3AD /* URLBuilder.swift */; };
+		62D8E9E6275934AF00DDA3AD /* NotoSansJP-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 62D8E9E52759344600DDA3AD /* NotoSansJP-Regular.otf */; };
+		62D8E9E7275934B300DDA3AD /* NotoSansJP-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 62D8E9E42759343C00DDA3AD /* NotoSansJP-Bold.otf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +31,10 @@
 		6219CF602755BF0A00B1E0FE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6219CF632755BF0A00B1E0FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6219CF652755BF0A00B1E0FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6253A2B92756097F00FF265D /* Helpearth.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Helpearth.entitlements; sourceTree = "<group>"; };
+		62D8E9DA275891BD00DDA3AD /* URLBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLBuilder.swift; sourceTree = "<group>"; };
+		62D8E9E42759343C00DDA3AD /* NotoSansJP-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansJP-Bold.otf"; sourceTree = "<group>"; };
+		62D8E9E52759344600DDA3AD /* NotoSansJP-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansJP-Regular.otf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +42,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				62A7DD69275882E7004B1410 /* RxSwift in Frameworks */,
+				62A7DD67275882E7004B1410 /* RxRelay in Frameworks */,
+				62A7DD6C27588D97004B1410 /* RxGesture in Frameworks */,
+				62A7DD65275882E7004B1410 /* RxCocoa in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,6 +71,8 @@
 		6219CF562755BF0900B1E0FE /* Helpearth */ = {
 			isa = PBXGroup;
 			children = (
+				62D8E9DC27592F2200DDA3AD /* Resources */,
+				6253A2B92756097F00FF265D /* Helpearth.entitlements */,
 				6219CF572755BF0900B1E0FE /* AppDelegate.swift */,
 				6219CF592755BF0900B1E0FE /* SceneDelegate.swift */,
 				6219CF5B2755BF0900B1E0FE /* ViewController.swift */,
@@ -63,8 +80,18 @@
 				6219CF602755BF0A00B1E0FE /* Assets.xcassets */,
 				6219CF622755BF0A00B1E0FE /* LaunchScreen.storyboard */,
 				6219CF652755BF0A00B1E0FE /* Info.plist */,
+				62D8E9DA275891BD00DDA3AD /* URLBuilder.swift */,
 			);
 			path = Helpearth;
+			sourceTree = "<group>";
+		};
+		62D8E9DC27592F2200DDA3AD /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				62D8E9E52759344600DDA3AD /* NotoSansJP-Regular.otf */,
+				62D8E9E42759343C00DDA3AD /* NotoSansJP-Bold.otf */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +110,12 @@
 			dependencies = (
 			);
 			name = Helpearth;
+			packageProductDependencies = (
+				62A7DD64275882E7004B1410 /* RxCocoa */,
+				62A7DD66275882E7004B1410 /* RxRelay */,
+				62A7DD68275882E7004B1410 /* RxSwift */,
+				62A7DD6B27588D97004B1410 /* RxGesture */,
+			);
 			productName = Helpearth;
 			productReference = 6219CF542755BF0900B1E0FE /* Helpearth.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +144,10 @@
 				Base,
 			);
 			mainGroup = 6219CF4B2755BF0900B1E0FE;
+			packageReferences = (
+				62A7DD63275882E7004B1410 /* XCRemoteSwiftPackageReference "RxSwift" */,
+				62A7DD6A27588D97004B1410 /* XCRemoteSwiftPackageReference "RxGesture" */,
+			);
 			productRefGroup = 6219CF552755BF0900B1E0FE /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -125,6 +162,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				62D8E9E7275934B300DDA3AD /* NotoSansJP-Bold.otf in Resources */,
+				62D8E9E6275934AF00DDA3AD /* NotoSansJP-Regular.otf in Resources */,
 				6219CF642755BF0A00B1E0FE /* LaunchScreen.storyboard in Resources */,
 				6219CF612755BF0A00B1E0FE /* Assets.xcassets in Resources */,
 				6219CF5F2755BF0900B1E0FE /* Main.storyboard in Resources */,
@@ -139,6 +178,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6219CF5C2755BF0900B1E0FE /* ViewController.swift in Sources */,
+				62D8E9DB275891BD00DDA3AD /* URLBuilder.swift in Sources */,
 				6219CF582755BF0900B1E0FE /* AppDelegate.swift in Sources */,
 				6219CF5A2755BF0900B1E0FE /* SceneDelegate.swift in Sources */,
 			);
@@ -287,11 +327,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Helpearth/Helpearth.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 59ZU2N6587;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Helpearth/Info.plist;
+				INFOPLIST_KEY_NFCReaderUsageDescription = "NFCスキャンを許可";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -315,11 +357,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Helpearth/Helpearth.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 59ZU2N6587;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Helpearth/Info.plist;
+				INFOPLIST_KEY_NFCReaderUsageDescription = "NFCスキャンを許可";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -360,6 +404,48 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		62A7DD63275882E7004B1410 /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.0.0;
+			};
+		};
+		62A7DD6A27588D97004B1410 /* XCRemoteSwiftPackageReference "RxGesture" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/RxSwiftCommunity/RxGesture";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		62A7DD64275882E7004B1410 /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 62A7DD63275882E7004B1410 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
+		};
+		62A7DD66275882E7004B1410 /* RxRelay */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 62A7DD63275882E7004B1410 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxRelay;
+		};
+		62A7DD68275882E7004B1410 /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 62A7DD63275882E7004B1410 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
+		};
+		62A7DD6B27588D97004B1410 /* RxGesture */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 62A7DD6A27588D97004B1410 /* XCRemoteSwiftPackageReference "RxGesture" */;
+			productName = RxGesture;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 6219CF4C2755BF0900B1E0FE /* Project object */;
 }
